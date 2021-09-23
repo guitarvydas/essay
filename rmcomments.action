@@ -1,0 +1,4 @@
+main [@stuff1 @script @stuff2] = [[${stuff1}${script}${stuff2}]]
+stuff [c] = [[${c}]]
+script [kscript @cs kendscript] = [[]]
+

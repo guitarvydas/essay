@@ -1,0 +1,3 @@
+main [front @stuff] = [[${stuff}]]
+frontmatter [dashes1 @stuff dashes2] = [[]]
+dashes [k3dashes] = [[]]

@@ -1,0 +1,6 @@
+FrontMatter {
+main = frontmatter stuff+
+frontmatter = dashes stuff+ dashes
+stuff = ~dashes any
+dashes = "---"
+}

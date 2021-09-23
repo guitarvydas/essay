@@ -1,0 +1,5 @@
+CommentsSection {
+main = stuff+ script? stuff*
+stuff = ~"<script" ~"</script>" any
+script = "<script" stuff+ "</script>"
+}
