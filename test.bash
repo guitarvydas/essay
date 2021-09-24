@@ -1,4 +1,3 @@
 #!/bin/bash
-fname=../test_export/Draft/"Agile_Takeaways.txt"
-echo $fname
-parse $fname rmcomments.ohm rmcomments.glue
+fname=~/Desktop/book_manuscripts/takeaways/test_export/Draft/"Agile_Takeaways.txt"
+python processBlog.py $fname
