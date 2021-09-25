@@ -30,7 +30,7 @@ def rmFrontMatterString (str):
 def rmBoilerPlateLinksString (str):
     writeTemp (str)
     p = subprocess.run(["pfr", tempfname, "rmBoilerPlateLinks.ohm", "rmBoilerPlateLinks.action"], capture_output=True, universal_newlines=True)
-    return p.stdout
+    return ( p.stdout )
 
 def processEssay (fname):
     print(fname, file=sys.stderr)
@@ -41,6 +41,5 @@ def processEssay (fname):
 
 r = processEssay (sys.argv[1])
 print (r)
-print ("argv is " + str(sys.argv))
 
 
