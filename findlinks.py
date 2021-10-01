@@ -3,15 +3,14 @@ import tempfile
 import sys
 import os
 
-dirName="../test_export/Draft"
-testfname="../test_export/Draft/Agile_Takeaways.txt"
+inDirName="/Users/tarvydas/Desktop/book_manuscripts/takeaways/test_export/Draft/"
 
 def findlinksFilename (fname):
     ## print(fname, file=sys.stderr)
-    p = subprocess.run(["parse", fname, "findlinks.ohm", "findlinks.action"], capture_output=True, universal_newlines=True)
+    p = subprocess.run(["pfr", fname, "findlinks.ohm", "findlinks.action"], capture_output=True, universal_newlines=True)
     return p.stdout
 
-for fname in os.listdir(dirName):
-    r = findlinksFilename (dirName + "/" + fname)
+for fname in os.listdir(inDirName):
+    r = findlinksFilename (inDirName + "/" + fname)
     print (r)
 
